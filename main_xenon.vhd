@@ -28,9 +28,16 @@ constant POST_20 : integer := 14;
 constant POST_21 : integer := 15;
 constant POST_22 : integer := 16;
 
+-- This timing is for CB 1921 with CPU_EXT_CLK_EN downclock
+--constant WIDTH_RESET_START  : integer := 298260;	--95444/95445 with STBY_CLK
+--constant WIDTH_RESET_END    : integer := 2;		--1 with STBY_CLK
+
+
 -- This timing is for CB 8192 with CPU_EXT_CLK_EN downclock
 constant WIDTH_RESET_START  : integer := 293909;	--94052 with STBY_CLK
 constant WIDTH_RESET_END    : integer := 1;			--1 with STBY_CLK
+
+
 constant WIDTH_BYPASS_END   : integer := 96000;
 
 constant TIME_RESET_START  : integer := WIDTH_RESET_START;
